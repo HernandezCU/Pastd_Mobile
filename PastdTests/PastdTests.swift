@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable import Pastd
 
 class PastdTests: XCTestCase {
 

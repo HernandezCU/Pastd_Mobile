@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../Pastd/RegisterViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../LogInViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../../../Moon Bold.otf">
+   </FileRef>
+   <FileRef
+      location = "group:../../../Moon Light.otf">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

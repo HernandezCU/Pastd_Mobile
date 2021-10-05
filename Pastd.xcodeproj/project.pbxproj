@@ -15,6 +15,16 @@
 		AE3F615E270BCCA700C3F10B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3F615C270BCCA700C3F10B /* LaunchScreen.storyboard */; };
 		AE3F6169270BCCA800C3F10B /* PastdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F6168270BCCA800C3F10B /* PastdTests.swift */; };
 		AE3F6174270BCCA800C3F10B /* PastdUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F6173270BCCA800C3F10B /* PastdUITests.swift */; };
+		AE3F6189270BD01100C3F10B /* Moon Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE3F6187270BD01100C3F10B /* Moon Bold.otf */; };
+		AE3F618A270BD01100C3F10B /* Moon Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE3F6188270BD01100C3F10B /* Moon Light.otf */; };
+		AE3F618E270BD05900C3F10B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE3F615F270BCCA700C3F10B /* Info.plist */; };
+		AE3F6192270BD05A00C3F10B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE3F615F270BCCA700C3F10B /* Info.plist */; };
+		AE3F6196270BD05B00C3F10B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE3F615F270BCCA700C3F10B /* Info.plist */; };
+		AE3F619E270BD44400C3F10B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F619D270BD44400C3F10B /* LogInViewController.swift */; };
+		AE3F61A3270BD4CB00C3F10B /* RegisterViewController copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F61A2270BD4CB00C3F10B /* RegisterViewController copy.swift */; };
+		AE3F61A8270BD53E00C3F10B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F61A7270BD53E00C3F10B /* MenuViewController.swift */; };
+		AE3F61AD270BD55600C3F10B /* CreatePasteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F61AC270BD55600C3F10B /* CreatePasteViewController.swift */; };
+		AE3F61B2270BD56700C3F10B /* ViewPasteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F61B1270BD56700C3F10B /* ViewPasteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,13 @@
 		AE3F616F270BCCA800C3F10B /* PastdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PastdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3F6173270BCCA800C3F10B /* PastdUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastdUITests.swift; sourceTree = "<group>"; };
 		AE3F6175270BCCA800C3F10B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE3F6187270BD01100C3F10B /* Moon Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moon Bold.otf"; sourceTree = "<group>"; };
+		AE3F6188270BD01100C3F10B /* Moon Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moon Light.otf"; sourceTree = "<group>"; };
+		AE3F619D270BD44400C3F10B /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		AE3F61A2270BD4CB00C3F10B /* RegisterViewController copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RegisterViewController copy.swift"; sourceTree = "<group>"; };
+		AE3F61A7270BD53E00C3F10B /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		AE3F61AC270BD55600C3F10B /* CreatePasteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasteViewController.swift; sourceTree = "<group>"; };
+		AE3F61B1270BD56700C3F10B /* ViewPasteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPasteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +116,13 @@
 		AE3F6150270BCCA400C3F10B /* Pastd */ = {
 			isa = PBXGroup;
 			children = (
+				AE3F61BA270BD58E00C3F10B /* Fonts */,
+				AE3F61B6270BD56D00C3F10B /* View Controllers */,
 				AE3F6151270BCCA400C3F10B /* AppDelegate.swift */,
 				AE3F6153270BCCA400C3F10B /* SceneDelegate.swift */,
-				AE3F6155270BCCA400C3F10B /* ViewController.swift */,
 				AE3F6157270BCCA400C3F10B /* Main.storyboard */,
-				AE3F615A270BCCA700C3F10B /* Assets.xcassets */,
 				AE3F615C270BCCA700C3F10B /* LaunchScreen.storyboard */,
+				AE3F615A270BCCA700C3F10B /* Assets.xcassets */,
 				AE3F615F270BCCA700C3F10B /* Info.plist */,
 			);
 			path = Pastd;
@@ -126,6 +144,28 @@
 				AE3F6175270BCCA800C3F10B /* Info.plist */,
 			);
 			path = PastdUITests;
+			sourceTree = "<group>";
+		};
+		AE3F61B6270BD56D00C3F10B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE3F61A7270BD53E00C3F10B /* MenuViewController.swift */,
+				AE3F61AC270BD55600C3F10B /* CreatePasteViewController.swift */,
+				AE3F61B1270BD56700C3F10B /* ViewPasteViewController.swift */,
+				AE3F61A2270BD4CB00C3F10B /* RegisterViewController copy.swift */,
+				AE3F619D270BD44400C3F10B /* LogInViewController.swift */,
+				AE3F6155270BCCA400C3F10B /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AE3F61BA270BD58E00C3F10B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AE3F6187270BD01100C3F10B /* Moon Bold.otf */,
+				AE3F6188270BD01100C3F10B /* Moon Light.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +273,9 @@
 			files = (
 				AE3F615E270BCCA700C3F10B /* LaunchScreen.storyboard in Resources */,
 				AE3F615B270BCCA700C3F10B /* Assets.xcassets in Resources */,
+				AE3F618E270BD05900C3F10B /* Info.plist in Resources */,
+				AE3F618A270BD01100C3F10B /* Moon Light.otf in Resources */,
+				AE3F6189270BD01100C3F10B /* Moon Bold.otf in Resources */,
 				AE3F6159270BCCA400C3F10B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE3F6192270BD05A00C3F10B /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE3F6196270BD05B00C3F10B /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE3F619E270BD44400C3F10B /* LogInViewController.swift in Sources */,
+				AE3F61A8270BD53E00C3F10B /* MenuViewController.swift in Sources */,
+				AE3F61A3270BD4CB00C3F10B /* RegisterViewController copy.swift in Sources */,
+				AE3F61AD270BD55600C3F10B /* CreatePasteViewController.swift in Sources */,
 				AE3F6156270BCCA400C3F10B /* ViewController.swift in Sources */,
 				AE3F6152270BCCA400C3F10B /* AppDelegate.swift in Sources */,
 				AE3F6154270BCCA400C3F10B /* SceneDelegate.swift in Sources */,
+				AE3F61B2270BD56700C3F10B /* ViewPasteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +489,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDWC62685W;
 				INFOPLIST_FILE = Pastd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +509,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KDWC62685W;
 				INFOPLIST_FILE = Pastd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
