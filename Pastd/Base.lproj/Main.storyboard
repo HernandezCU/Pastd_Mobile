@@ -31,7 +31,7 @@
                                     <constraint firstAttribute="height" constant="112" id="Tt3-Xn-VcB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="52"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="yPQ-S4-SJl">
@@ -77,7 +77,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yPQ-S4-SJl" secondAttribute="bottom" constant="100" id="Hxg-zb-vxR"/>
                             <constraint firstItem="Gti-uf-hh6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UJx-cb-MzS"/>
@@ -123,7 +123,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQW-QT-JCU">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="31.5"/>
                                         <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="30"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W4v-0t-iph">
@@ -131,6 +131,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="4TG-o6-Bc2"/>
                                         </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="19"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -148,7 +149,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uk6-Iw-IgR">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="31.5"/>
                                         <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="30"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8BA-7S-aJ3">
@@ -157,7 +158,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="ebs-9P-Ejb"/>
                                         </constraints>
-                                        <color key="textColor" systemColor="labelColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -172,12 +173,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Paste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHJ-8p-ndG">
                                 <rect key="frame" x="95.5" y="20" width="223" height="47"/>
                                 <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="40"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OCd-Wa-5Vc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5sI-SP-jro" firstAttribute="top" secondItem="bHJ-8p-ndG" secondAttribute="bottom" constant="46" id="9s0-xe-u1C"/>
                             <constraint firstItem="bHJ-8p-ndG" firstAttribute="top" secondItem="OCd-Wa-5Vc" secondAttribute="top" constant="20" id="9wm-BO-2nA"/>
@@ -219,7 +220,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unique Access Key" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkk-yr-8E4">
                                         <rect key="frame" x="0.0" y="0.0" width="365" height="36.5"/>
                                         <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="35"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dNa-vT-Rp2">
@@ -229,7 +230,7 @@
                                             <constraint firstAttribute="height" constant="200" id="axr-4T-xYr"/>
                                         </constraints>
                                         <string key="text">Everytime a new paste is created, a unique URL Safe Key is assigned to the paste. This key is the only way you will be able to access your paste. If you lose this key your paste will be lost forever. </string>
-                                        <color key="textColor" systemColor="labelColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -241,7 +242,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWt-Le-UU2">
                                         <rect key="frame" x="0.0" y="0.0" width="365" height="31.5"/>
                                         <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="30"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="XXX-XXXX-XXX-XX" borderStyle="roundedRect" placeholder="XXX-XXXX-XXX-XX" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M6M-D4-VJS">
@@ -249,6 +250,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="w9M-ul-lp3"/>
                                         </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -257,12 +259,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key has been saved to clipboard!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Um9-Da-pCS">
                                 <rect key="frame" x="25" y="540" width="364" height="19"/>
                                 <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dgA-55-lLs"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Um9-Da-pCS" firstAttribute="top" secondItem="Lxg-XB-HhH" secondAttribute="bottom" constant="29.5" id="0Uz-s7-P90"/>
                             <constraint firstItem="Lxg-XB-HhH" firstAttribute="top" secondItem="TZe-gi-w3j" secondAttribute="bottom" constant="73.5" id="9uI-5f-JH4"/>
@@ -296,7 +298,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Paste Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IT-FA-XFb">
                                 <rect key="frame" x="21.5" y="85" width="371" height="36.5"/>
                                 <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="35"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="8uq-XA-Sty">
@@ -305,7 +307,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Code:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzX-Iw-twk">
                                         <rect key="frame" x="0.0" y="0.0" width="364" height="31.5"/>
                                         <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="30"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oRv-Y2-qaY">
@@ -313,6 +315,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="tzP-R2-Z2b"/>
                                         </constraints>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -340,7 +343,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jkg-wH-bXD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="svP-Uy-qow" firstAttribute="bottom" secondItem="jkg-wH-bXD" secondAttribute="bottom" id="1U7-SZ-774"/>
                             <constraint firstItem="5IT-FA-XFb" firstAttribute="leading" secondItem="jkg-wH-bXD" secondAttribute="leading" constant="21.5" id="3ZP-oV-WqV"/>
@@ -375,7 +378,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RU4-X7-TzO">
                                 <rect key="frame" x="25" y="215" width="369" height="476"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="textColor" systemColor="labelColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -399,13 +402,13 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="136" id="Q43-e5-LdG"/>
                                 </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="27"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="peu-uN-mLt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nA9-tg-MSw" firstAttribute="top" secondItem="peu-uN-mLt" secondAttribute="top" constant="31" id="2a3-Er-EkL"/>
                             <constraint firstItem="nA9-tg-MSw" firstAttribute="leading" secondItem="RU4-X7-TzO" secondAttribute="leading" id="Gcu-U1-gPz"/>
@@ -433,12 +436,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SiK-cp-TA0"/>
+        <segue reference="1Qd-HK-0ZW"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

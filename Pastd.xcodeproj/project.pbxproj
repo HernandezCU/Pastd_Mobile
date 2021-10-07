@@ -15,11 +15,13 @@
 		AE3F615E270BCCA700C3F10B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE3F615C270BCCA700C3F10B /* LaunchScreen.storyboard */; };
 		AE3F61AD270BD55600C3F10B /* CreatePasteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F61AC270BD55600C3F10B /* CreatePasteViewController.swift */; };
 		AE3F61B2270BD56700C3F10B /* ViewPasteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3F61B1270BD56700C3F10B /* ViewPasteViewController.swift */; };
-		AE5FBF05270D1E63005A4D67 /* Moon Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE5FBF03270D1E63005A4D67 /* Moon Light.otf */; };
-		AE5FBF06270D1E63005A4D67 /* Moon Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE5FBF04270D1E63005A4D67 /* Moon Bold.otf */; };
 		AE5FBF0B270D22FB005A4D67 /* KeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5FBF0A270D22FB005A4D67 /* KeyViewController.swift */; };
 		AE63BF76270DE85C000F8882 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63BF75270DE85C000F8882 /* SpinnerViewController.swift */; };
 		AE63BF7B270DEE4F000F8882 /* PasteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63BF7A270DEE4F000F8882 /* PasteViewController.swift */; };
+		AE7F4EB0270E949D00BDFC96 /* Moon Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE7F4EA3270E931F00BDFC96 /* Moon Bold.otf */; };
+		AE7F4EB4270E94A100BDFC96 /* Moon Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE7F4EA4270E931F00BDFC96 /* Moon Light.otf */; };
+		AE7F4EC5270E991D00BDFC96 /* LaunchScree.png in Resources */ = {isa = PBXBuildFile; fileRef = AE7F4EC4270E991D00BDFC96 /* LaunchScree.png */; };
+		AE7F4ECA270E9A7A00BDFC96 /* pastd_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AE7F4EC9270E9A7A00BDFC96 /* pastd_logo.png */; };
 		AEF1FA74270CA83400CBE6F8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF1FA73270CA83400CBE6F8 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,11 +55,13 @@
 		AE3F616F270BCCA800C3F10B /* PastdUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PastdUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3F61AC270BD55600C3F10B /* CreatePasteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasteViewController.swift; sourceTree = "<group>"; };
 		AE3F61B1270BD56700C3F10B /* ViewPasteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPasteViewController.swift; sourceTree = "<group>"; };
-		AE5FBF03270D1E63005A4D67 /* Moon Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moon Light.otf"; sourceTree = "<group>"; };
-		AE5FBF04270D1E63005A4D67 /* Moon Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moon Bold.otf"; sourceTree = "<group>"; };
 		AE5FBF0A270D22FB005A4D67 /* KeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyViewController.swift; sourceTree = "<group>"; };
 		AE63BF75270DE85C000F8882 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 		AE63BF7A270DEE4F000F8882 /* PasteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteViewController.swift; sourceTree = "<group>"; };
+		AE7F4EA3270E931F00BDFC96 /* Moon Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moon Bold.otf"; sourceTree = "<group>"; };
+		AE7F4EA4270E931F00BDFC96 /* Moon Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moon Light.otf"; sourceTree = "<group>"; };
+		AE7F4EC4270E991D00BDFC96 /* LaunchScree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScree.png; sourceTree = "<group>"; };
+		AE7F4EC9270E9A7A00BDFC96 /* pastd_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pastd_logo.png; sourceTree = "<group>"; };
 		AEF1FA73270CA83400CBE6F8 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +111,8 @@
 		AE3F6150270BCCA400C3F10B /* Pastd */ = {
 			isa = PBXGroup;
 			children = (
+				AE7F4EC9270E9A7A00BDFC96 /* pastd_logo.png */,
+				AE7F4EC4270E991D00BDFC96 /* LaunchScree.png */,
 				AEF1FA6D270CA7EC00CBE6F8 /* Styles */,
 				AE3F61BA270BD58E00C3F10B /* Fonts */,
 				AE3F61B6270BD56D00C3F10B /* View Controllers */,
@@ -135,8 +141,8 @@
 		AE3F61BA270BD58E00C3F10B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				AE5FBF04270D1E63005A4D67 /* Moon Bold.otf */,
-				AE5FBF03270D1E63005A4D67 /* Moon Light.otf */,
+				AE7F4EA3270E931F00BDFC96 /* Moon Bold.otf */,
+				AE7F4EA4270E931F00BDFC96 /* Moon Light.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -253,10 +259,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7F4EB4270E94A100BDFC96 /* Moon Light.otf in Resources */,
+				AE7F4EB0270E949D00BDFC96 /* Moon Bold.otf in Resources */,
 				AE3F615E270BCCA700C3F10B /* LaunchScreen.storyboard in Resources */,
-				AE5FBF06270D1E63005A4D67 /* Moon Bold.otf in Resources */,
+				AE7F4EC5270E991D00BDFC96 /* LaunchScree.png in Resources */,
+				AE7F4ECA270E9A7A00BDFC96 /* pastd_logo.png in Resources */,
 				AE3F615B270BCCA700C3F10B /* Assets.xcassets in Resources */,
-				AE5FBF05270D1E63005A4D67 /* Moon Light.otf in Resources */,
 				AE3F6159270BCCA400C3F10B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
