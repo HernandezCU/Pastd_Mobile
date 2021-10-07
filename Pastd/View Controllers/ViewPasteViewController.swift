@@ -51,8 +51,7 @@ class ViewPasteViewController: UIViewController, UITextFieldDelegate {
     
     private func fetchData(from url: String){
         let child = SpinnerViewController()
-
-        // add the spinner view controller
+        
         addChild(child)
         child.view.frame = view.frame
         view.addSubview(child.view)

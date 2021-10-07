@@ -379,7 +379,7 @@
                                 <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1d-r8-vyr">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1d-r8-vyr">
                                 <rect key="frame" x="25" y="719" width="364" height="89"/>
                                 <color key="backgroundColor" red="0.52941176469999995" green="0.31372549020000001" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -389,6 +389,9 @@
                                 <state key="normal" title="Delete Paste">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="del_paste:" destination="rgf-bY-eJh" eventType="touchUpInside" id="fgB-0M-FOK"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nA9-tg-MSw">
                                 <rect key="frame" x="25" y="31" width="369" height="136"/>
@@ -430,7 +433,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Mst-fK-kBm"/>
         <segue reference="SiK-cp-TA0"/>
     </inferredMetricsTieBreakers>
     <resources>
