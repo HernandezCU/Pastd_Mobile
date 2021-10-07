@@ -12,7 +12,7 @@ class SpinnerViewController: UIViewController {
 
     override func loadView() {
         view = UIView()
-        view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)
+        view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
         spinner.translatesAutoresizingMaskIntoConstraints = false
         spinner.startAnimating()
         view.addSubview(spinner)

@@ -27,6 +27,7 @@ class CreatePasteViewController: UIViewController, UITextFieldDelegate, UITextVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        body_field.backgroundColor = .white
         access_btn.layer.cornerRadius = 20
         Utilities.styleTextField(heading_field)
         body_field.layer.borderWidth = 3

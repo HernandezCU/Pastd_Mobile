@@ -23,6 +23,8 @@ class PasteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        heading_label.backgroundColor = .white
+        body_label.backgroundColor = .white
         print("view loaded!")
     }
     

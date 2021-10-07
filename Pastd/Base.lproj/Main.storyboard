@@ -223,7 +223,7 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dNa-vT-Rp2">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dNa-vT-Rp2">
                                         <rect key="frame" x="0.0" y="44.5" width="365" height="200"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -280,6 +280,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="FhR-Ft-LBV"/>
                     <connections>
+                        <outlet property="desc" destination="dNa-vT-Rp2" id="pEO-Gw-gj8"/>
                         <outlet property="key_display_field" destination="M6M-D4-VJS" id="ejX-SR-E1a"/>
                     </connections>
                 </viewController>
@@ -436,7 +437,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="1Qd-HK-0ZW"/>
+        <segue reference="SiK-cp-TA0"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
