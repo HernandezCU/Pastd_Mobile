@@ -1,0 +1,51 @@
+
+/* Class = "UIButton"; normalTitle = "Create a Paste"; ObjectID = "27g-YF-Jgz"; */
+"27g-YF-Jgz.normalTitle" = "Create a Paste";
+
+/* Class = "UILabel"; text = "Enter Paste Code"; ObjectID = "5IT-FA-XFb"; */
+"5IT-FA-XFb.text" = "Enter Paste Code";
+
+/* Class = "UILabel"; text = "Pastd"; ObjectID = "Gti-uf-hh6"; */
+"Gti-uf-hh6.text" = "Pastd";
+
+/* Class = "UITextField"; placeholder = "XXX-XXXX-XXX-XX"; ObjectID = "M6M-D4-VJS"; */
+"M6M-D4-VJS.placeholder" = "XXX-XXXX-XXX-XX";
+
+/* Class = "UITextField"; text = "XXX-XXXX-XXX-XX"; ObjectID = "M6M-D4-VJS"; */
+"M6M-D4-VJS.text" = "XXX-XXXX-XXX-XX";
+
+/* Class = "UILabel"; text = "Heading"; ObjectID = "NQW-QT-JCU"; */
+"NQW-QT-JCU.text" = "Heading";
+
+/* Class = "UIButton"; normalTitle = "Access Paste"; ObjectID = "Olt-pI-ic9"; */
+"Olt-pI-ic9.normalTitle" = "Access Paste";
+
+/* Class = "UILabel"; text = "Enter Code:"; ObjectID = "TzX-Iw-twk"; */
+"TzX-Iw-twk.text" = "Enter Code:";
+
+/* Class = "UILabel"; text = "Body"; ObjectID = "Uk6-Iw-IgR"; */
+"Uk6-Iw-IgR.text" = "Body";
+
+/* Class = "UILabel"; text = "Key has been saved to clipboard!"; ObjectID = "Um9-Da-pCS"; */
+"Um9-Da-pCS.text" = "Key has been saved to clipboard!";
+
+/* Class = "UILabel"; text = "Key:"; ObjectID = "WWt-Le-UU2"; */
+"WWt-Le-UU2.text" = "Key:";
+
+/* Class = "UILabel"; text = "New Paste"; ObjectID = "bHJ-8p-ndG"; */
+"bHJ-8p-ndG.text" = "New Paste";
+
+/* Class = "UIButton"; normalTitle = "Delete Paste"; ObjectID = "d1d-r8-vyr"; */
+"d1d-r8-vyr.normalTitle" = "Delete Paste";
+
+/* Class = "UITextView"; text = "Everytime a new paste is created, a unique URL Safe Key is assigned to the paste. This key is the only way you will be able to access your paste. If you lose this key your paste will be lost forever. "; ObjectID = "dNa-vT-Rp2"; */
+"dNa-vT-Rp2.text" = "Everytime a new paste is created, a unique URL Safe Key is assigned to the paste. This key is the only way you will be able to access your paste. If you lose this key your paste will be lost forever. ";
+
+/* Class = "UIButton"; normalTitle = "Find a Paste"; ObjectID = "hNG-fx-Xnj"; */
+"hNG-fx-Xnj.normalTitle" = "Find a Paste";
+
+/* Class = "UILabel"; text = "Unique Access Key"; ObjectID = "jkk-yr-8E4"; */
+"jkk-yr-8E4.text" = "Unique Access Key";
+
+/* Class = "UIButton"; normalTitle = "Access Paste"; ObjectID = "svP-Uy-qow"; */
+"svP-Uy-qow.normalTitle" = "Access Paste";
