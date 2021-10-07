@@ -25,9 +25,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gti-uf-hh6">
-                                <rect key="frame" x="20" y="96" width="374" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pastd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gti-uf-hh6">
+                                <rect key="frame" x="123.5" y="96" width="167.5" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="Tt3-Xn-VcB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="52"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -42,9 +44,12 @@
                                             <constraint firstAttribute="height" constant="75" id="PU6-tE-P0p"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="25"/>
-                                        <state key="normal" title="Log In">
+                                        <state key="normal" title="Find a Paste">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="m6a-DE-VdK" kind="show" id="1Qd-HK-0ZW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27g-YF-Jgz">
                                         <rect key="frame" x="0.0" y="115" width="314" height="75"/>
@@ -53,9 +58,12 @@
                                             <constraint firstAttribute="height" constant="75" id="Elf-5r-gB0"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="25"/>
-                                        <state key="normal" title="Register">
+                                        <state key="normal" title="Create a Paste">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="HsJ-mO-2Xu" kind="show" id="udF-Js-7RK"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -72,92 +80,363 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yPQ-S4-SJl" secondAttribute="bottom" constant="100" id="Hxg-zb-vxR"/>
+                            <constraint firstItem="Gti-uf-hh6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UJx-cb-MzS"/>
+                            <constraint firstItem="Gti-uf-hh6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="hxY-5i-bAU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yPQ-S4-SJl" secondAttribute="trailing" constant="50" id="j8Z-iH-Wfz"/>
                             <constraint firstItem="yPQ-S4-SJl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="jeB-Qr-HT7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="create_a_paste_btn" destination="27g-YF-Jgz" id="ZKy-Ak-juF"/>
+                        <outlet property="find_paste_btn" destination="hNG-fx-Xnj" id="etx-Nj-koX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
+            <point key="canvasLocation" x="-287" y="72"/>
         </scene>
-        <!--Register View Controller-->
-        <scene sceneID="e5f-6r-ash">
-            <objects>
-                <viewController id="jxF-ME-yY3" customClass="RegisterViewController" customModule="Pastd" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rgf-Wu-vPW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="RX7-Yq-KaJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Vh-Iq-5Ze" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="811" y="424"/>
-        </scene>
-        <!--Menu View Controller-->
-        <scene sceneID="qvr-oZ-XNE">
-            <objects>
-                <viewController id="wST-uf-QWC" customClass="MenuViewController" customModule="Pastd" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7F4-y6-Ovc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="3UT-Bt-jf8"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="00y-bk-vBk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1677" y="111"/>
-        </scene>
-        <!--View Paste View Controller-->
+        <!--Create Paste View Controller-->
         <scene sceneID="JTJ-MP-qbv">
             <objects>
-                <viewController id="HsJ-mO-2Xu" customClass="ViewPasteViewController" customModule="Pastd" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HsJ-mO-2Xu" customClass="CreatePasteViewController" customModule="Pastd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RHd-fB-eam">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olt-pI-ic9">
+                                <rect key="frame" x="25" y="719" width="364" height="89"/>
+                                <color key="backgroundColor" red="0.52941176469999995" green="0.31372549020000001" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="X74-d3-0B5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="25"/>
+                                <state key="normal" title="Access Paste">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit_paste:" destination="HsJ-mO-2Xu" eventType="touchUpInside" id="K7D-tA-WXA"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="5sI-SP-jro">
+                                <rect key="frame" x="25" y="113" width="364" height="141.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQW-QT-JCU">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W4v-0t-iph">
+                                        <rect key="frame" x="0.0" y="81.5" width="364" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="4TG-o6-Bc2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NQW-QT-JCU" firstAttribute="leading" secondItem="5sI-SP-jro" secondAttribute="leading" id="BWc-Yi-of7"/>
+                                    <constraint firstAttribute="trailing" secondItem="W4v-0t-iph" secondAttribute="trailing" id="Gz1-4C-lEz"/>
+                                    <constraint firstAttribute="trailing" secondItem="NQW-QT-JCU" secondAttribute="trailing" id="Obo-hr-Qln"/>
+                                    <constraint firstItem="W4v-0t-iph" firstAttribute="leading" secondItem="5sI-SP-jro" secondAttribute="leading" id="TN2-MH-8EB"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="VK0-ei-oic">
+                                <rect key="frame" x="25" y="300" width="364" height="381.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uk6-Iw-IgR">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8BA-7S-aJ3">
+                                        <rect key="frame" x="0.0" y="81.5" width="364" height="300"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="ebs-9P-Ejb"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Uk6-Iw-IgR" firstAttribute="leading" secondItem="VK0-ei-oic" secondAttribute="leading" id="8Gl-Vk-p68"/>
+                                    <constraint firstAttribute="trailing" secondItem="8BA-7S-aJ3" secondAttribute="trailing" id="LDp-3h-mqx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uk6-Iw-IgR" secondAttribute="trailing" id="YOP-Om-jZb"/>
+                                    <constraint firstItem="8BA-7S-aJ3" firstAttribute="leading" secondItem="VK0-ei-oic" secondAttribute="leading" id="ZdF-Jl-xsn"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Paste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHJ-8p-ndG">
+                                <rect key="frame" x="95.5" y="20" width="223" height="47"/>
+                                <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="OCd-Wa-5Vc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5sI-SP-jro" firstAttribute="top" secondItem="bHJ-8p-ndG" secondAttribute="bottom" constant="46" id="9s0-xe-u1C"/>
+                            <constraint firstItem="bHJ-8p-ndG" firstAttribute="top" secondItem="OCd-Wa-5Vc" secondAttribute="top" constant="20" id="9wm-BO-2nA"/>
+                            <constraint firstItem="OCd-Wa-5Vc" firstAttribute="trailing" secondItem="Olt-pI-ic9" secondAttribute="trailing" constant="25" id="BtH-rO-X5Z"/>
+                            <constraint firstItem="5sI-SP-jro" firstAttribute="leading" secondItem="OCd-Wa-5Vc" secondAttribute="leading" constant="25" id="HIW-D0-xwL"/>
+                            <constraint firstItem="VK0-ei-oic" firstAttribute="leading" secondItem="OCd-Wa-5Vc" secondAttribute="leading" constant="25" id="Las-XZ-Dw5"/>
+                            <constraint firstItem="bHJ-8p-ndG" firstAttribute="centerX" secondItem="5sI-SP-jro" secondAttribute="centerX" id="Pze-Pr-B6s"/>
+                            <constraint firstItem="Olt-pI-ic9" firstAttribute="top" secondItem="VK0-ei-oic" secondAttribute="bottom" constant="37.5" id="cOu-RW-PLj"/>
+                            <constraint firstItem="OCd-Wa-5Vc" firstAttribute="trailing" secondItem="VK0-ei-oic" secondAttribute="trailing" constant="25" id="jfb-ju-4XN"/>
+                            <constraint firstItem="Olt-pI-ic9" firstAttribute="bottom" secondItem="OCd-Wa-5Vc" secondAttribute="bottom" id="sL5-qo-rkO"/>
+                            <constraint firstItem="OCd-Wa-5Vc" firstAttribute="trailing" secondItem="5sI-SP-jro" secondAttribute="trailing" constant="25" id="spl-kF-ldo"/>
+                            <constraint firstItem="Olt-pI-ic9" firstAttribute="leading" secondItem="OCd-Wa-5Vc" secondAttribute="leading" constant="25" id="y9u-a5-7tH"/>
+                            <constraint firstItem="5sI-SP-jro" firstAttribute="top" secondItem="RHd-fB-eam" secondAttribute="top" constant="113" id="yTU-ur-xJq"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ERC-d6-xas"/>
+                    <connections>
+                        <outlet property="access_btn" destination="Olt-pI-ic9" id="8aI-Rc-5IF"/>
+                        <outlet property="body_field" destination="8BA-7S-aJ3" id="DdC-r5-Ecf"/>
+                        <outlet property="heading_field" destination="W4v-0t-iph" id="H3S-wP-JQ5"/>
+                        <segue destination="QaG-H8-AEB" kind="show" identifier="show_key" id="vmc-gV-RDr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="202-wq-wqi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2523" y="419"/>
+            <point key="canvasLocation" x="732" y="394"/>
         </scene>
-        <!--Create Paste View Controller-->
+        <!--Key View Controller-->
+        <scene sceneID="WHw-oF-6MO">
+            <objects>
+                <viewController id="QaG-H8-AEB" customClass="KeyViewController" customModule="Pastd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TyV-sg-6rr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TZe-gi-w3j">
+                                <rect key="frame" x="24" y="85" width="365" height="244.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unique Access Key" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkk-yr-8E4">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="36.5"/>
+                                        <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dNa-vT-Rp2">
+                                        <rect key="frame" x="0.0" y="44.5" width="365" height="200"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="axr-4T-xYr"/>
+                                        </constraints>
+                                        <string key="text">Everytime a new paste is created, a unique URL Safe Key is assigned to the paste. This key is the only way you will be able to access your paste. If you lose this key your paste will be lost forever. </string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Lxg-XB-HhH">
+                                <rect key="frame" x="24" y="403" width="365" height="107.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWt-Le-UU2">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="XXX-XXXX-XXX-XX" borderStyle="roundedRect" placeholder="XXX-XXXX-XXX-XX" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M6M-D4-VJS">
+                                        <rect key="frame" x="0.0" y="47.5" width="365" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="w9M-ul-lp3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key has been saved to clipboard!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Um9-Da-pCS">
+                                <rect key="frame" x="25" y="540" width="364" height="19"/>
+                                <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dgA-55-lLs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Um9-Da-pCS" firstAttribute="top" secondItem="Lxg-XB-HhH" secondAttribute="bottom" constant="29.5" id="0Uz-s7-P90"/>
+                            <constraint firstItem="Lxg-XB-HhH" firstAttribute="top" secondItem="TZe-gi-w3j" secondAttribute="bottom" constant="73.5" id="9uI-5f-JH4"/>
+                            <constraint firstItem="Um9-Da-pCS" firstAttribute="trailing" secondItem="Lxg-XB-HhH" secondAttribute="trailing" id="Iwg-J4-Sdt"/>
+                            <constraint firstItem="dgA-55-lLs" firstAttribute="trailing" secondItem="Um9-Da-pCS" secondAttribute="trailing" constant="25" id="UyQ-un-ET6"/>
+                            <constraint firstItem="Lxg-XB-HhH" firstAttribute="leading" secondItem="dgA-55-lLs" secondAttribute="leading" constant="24" id="ZYS-MQ-rVe"/>
+                            <constraint firstItem="Lxg-XB-HhH" firstAttribute="centerX" secondItem="TZe-gi-w3j" secondAttribute="centerX" id="tnL-fs-acQ"/>
+                            <constraint firstItem="Lxg-XB-HhH" firstAttribute="trailing" secondItem="TZe-gi-w3j" secondAttribute="trailing" id="u33-ZY-Qkb"/>
+                            <constraint firstItem="Um9-Da-pCS" firstAttribute="leading" secondItem="dgA-55-lLs" secondAttribute="leading" constant="25" id="uio-tM-Ith"/>
+                            <constraint firstItem="dgA-55-lLs" firstAttribute="trailing" secondItem="Lxg-XB-HhH" secondAttribute="trailing" constant="25" id="yph-2k-mcr"/>
+                            <constraint firstItem="dgA-55-lLs" firstAttribute="bottom" secondItem="Lxg-XB-HhH" secondAttribute="bottom" constant="297.5" id="zFs-8q-UH2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FhR-Ft-LBV"/>
+                    <connections>
+                        <outlet property="key_display_field" destination="M6M-D4-VJS" id="ejX-SR-E1a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jWU-uX-NpY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1576.8115942028987" y="393.75"/>
+        </scene>
+        <!--View Paste View Controller-->
         <scene sceneID="bup-XG-Lfg">
             <objects>
-                <viewController id="m6a-DE-VdK" customClass="CreatePasteViewController" customModule="Pastd" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m6a-DE-VdK" customClass="ViewPasteViewController" customModule="Pastd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mch-3D-ELx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Paste Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IT-FA-XFb">
+                                <rect key="frame" x="21.5" y="85" width="371" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="8uq-XA-Sty">
+                                <rect key="frame" x="25" y="210" width="364" height="191.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Code:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzX-Iw-twk">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="31.5"/>
+                                        <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oRv-Y2-qaY">
+                                        <rect key="frame" x="0.0" y="131.5" width="364" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="tzP-R2-Z2b"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="25"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oRv-Y2-qaY" firstAttribute="leading" secondItem="8uq-XA-Sty" secondAttribute="leading" id="45a-uN-KDo"/>
+                                    <constraint firstItem="TzX-Iw-twk" firstAttribute="leading" secondItem="8uq-XA-Sty" secondAttribute="leading" id="9eS-i2-LRr"/>
+                                    <constraint firstAttribute="trailing" secondItem="oRv-Y2-qaY" secondAttribute="trailing" id="lx5-Uu-2cG"/>
+                                    <constraint firstAttribute="trailing" secondItem="TzX-Iw-twk" secondAttribute="trailing" id="xFu-JB-pCl"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svP-Uy-qow">
+                                <rect key="frame" x="25" y="719" width="364" height="89"/>
+                                <color key="backgroundColor" red="0.52941176469999995" green="0.31372549020000001" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="qs6-dn-mvm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="25"/>
+                                <state key="normal" title="Access Paste">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="access_paste:" destination="m6a-DE-VdK" eventType="touchUpInside" id="bYN-Mv-Jf7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jkg-wH-bXD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="svP-Uy-qow" firstAttribute="bottom" secondItem="jkg-wH-bXD" secondAttribute="bottom" id="1U7-SZ-774"/>
+                            <constraint firstItem="5IT-FA-XFb" firstAttribute="leading" secondItem="jkg-wH-bXD" secondAttribute="leading" constant="21.5" id="3ZP-oV-WqV"/>
+                            <constraint firstItem="8uq-XA-Sty" firstAttribute="top" secondItem="Mch-3D-ELx" secondAttribute="top" constant="210" id="5SM-d4-QkG"/>
+                            <constraint firstItem="8uq-XA-Sty" firstAttribute="leading" secondItem="jkg-wH-bXD" secondAttribute="leading" constant="25" id="KAm-yr-JwZ"/>
+                            <constraint firstItem="jkg-wH-bXD" firstAttribute="trailing" secondItem="svP-Uy-qow" secondAttribute="trailing" constant="25" id="NvG-aK-fNz"/>
+                            <constraint firstItem="jkg-wH-bXD" firstAttribute="trailing" secondItem="8uq-XA-Sty" secondAttribute="trailing" constant="25" id="Xgm-vm-9JF"/>
+                            <constraint firstItem="svP-Uy-qow" firstAttribute="leading" secondItem="jkg-wH-bXD" secondAttribute="leading" constant="25" id="a5X-Er-JwG"/>
+                            <constraint firstItem="5IT-FA-XFb" firstAttribute="centerX" secondItem="8uq-XA-Sty" secondAttribute="centerX" id="f7N-2h-B7d"/>
+                            <constraint firstItem="5IT-FA-XFb" firstAttribute="top" secondItem="jkg-wH-bXD" secondAttribute="top" constant="85" id="w2r-Uk-jpp"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="iae-Av-S3v"/>
+                    <connections>
+                        <outlet property="access_btn" destination="svP-Uy-qow" id="xCs-OC-mca"/>
+                        <outlet property="code_field" destination="oRv-Y2-qaY" id="Gb8-6M-82z"/>
+                        <segue destination="rgf-bY-eJh" kind="presentation" identifier="view_paste" id="Mst-fK-kBm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ycd-jF-ubh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2537" y="-273"/>
+            <point key="canvasLocation" x="732" y="-260"/>
         </scene>
-        <!--Log In View Controller-->
-        <scene sceneID="Zcw-Il-pdm">
+        <!--Paste View Controller-->
+        <scene sceneID="jD4-2Q-JYr">
             <objects>
-                <viewController id="OQg-gj-TvX" customClass="LogInViewController" customModule="Pastd" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VuK-RB-S5h" customClass="L">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="rgf-bY-eJh" customClass="PasteViewController" customModule="Pastd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xLK-3K-VPI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="OYo-Y5-JbQ"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RU4-X7-TzO">
+                                <rect key="frame" x="25" y="215" width="369" height="476"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1d-r8-vyr">
+                                <rect key="frame" x="25" y="719" width="364" height="89"/>
+                                <color key="backgroundColor" red="0.52941176469999995" green="0.31372549020000001" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="qLk-FT-rAe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Moon-Light" family="Moon" pointSize="25"/>
+                                <state key="normal" title="Delete Paste">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nA9-tg-MSw">
+                                <rect key="frame" x="25" y="31" width="369" height="136"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="Q43-e5-LdG"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Moon-Bold" family="Moon" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="peu-uN-mLt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nA9-tg-MSw" firstAttribute="top" secondItem="peu-uN-mLt" secondAttribute="top" constant="31" id="2a3-Er-EkL"/>
+                            <constraint firstItem="nA9-tg-MSw" firstAttribute="leading" secondItem="RU4-X7-TzO" secondAttribute="leading" id="Gcu-U1-gPz"/>
+                            <constraint firstItem="RU4-X7-TzO" firstAttribute="leading" secondItem="d1d-r8-vyr" secondAttribute="leading" id="P6j-L8-zQX"/>
+                            <constraint firstItem="d1d-r8-vyr" firstAttribute="top" secondItem="RU4-X7-TzO" secondAttribute="bottom" constant="28" id="Q2J-Ag-z02"/>
+                            <constraint firstItem="nA9-tg-MSw" firstAttribute="leading" secondItem="peu-uN-mLt" secondAttribute="leading" constant="25" id="Ykr-IO-IfN"/>
+                            <constraint firstItem="RU4-X7-TzO" firstAttribute="top" secondItem="nA9-tg-MSw" secondAttribute="bottom" constant="48" id="bzQ-TR-p5g"/>
+                            <constraint firstItem="nA9-tg-MSw" firstAttribute="trailing" secondItem="RU4-X7-TzO" secondAttribute="trailing" id="cGH-o8-H7c"/>
+                            <constraint firstItem="d1d-r8-vyr" firstAttribute="bottom" secondItem="peu-uN-mLt" secondAttribute="bottom" id="foP-PX-v1h"/>
+                            <constraint firstItem="nA9-tg-MSw" firstAttribute="trailing" secondItem="xLK-3K-VPI" secondAttribute="trailingMargin" id="id5-qj-JUT"/>
+                            <constraint firstItem="d1d-r8-vyr" firstAttribute="centerX" secondItem="xLK-3K-VPI" secondAttribute="centerX" id="nJg-nl-5yR"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="N6E-Jg-YTP"/>
+                    <connections>
+                        <outlet property="body_label" destination="RU4-X7-TzO" id="yPW-Bz-y2L"/>
+                        <outlet property="delete_paste_btn" destination="d1d-r8-vyr" id="DaE-1D-RXA"/>
+                        <outlet property="heading_label" destination="nA9-tg-MSw" id="VHX-Em-ve1"/>
+                        <segue destination="m6a-DE-VdK" kind="show" identifier="back_to_key" id="SiK-cp-TA0"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N8X-C2-Oh2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ch-2n-8Av" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="814" y="-236"/>
+            <point key="canvasLocation" x="1576.8115942028987" y="-260.49107142857144"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Mst-fK-kBm"/>
+        <segue reference="SiK-cp-TA0"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
